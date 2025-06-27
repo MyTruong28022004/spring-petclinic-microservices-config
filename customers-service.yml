@@ -12,6 +12,8 @@ spring:
   config:
     activate:
       on-profile: docker
+  zipkin:
+    base-url: ${SPRING_ZIPKIN_BASE_URL:http://zipkin.observability.svc.cluster.local:80}
 server:
   port: 8081
 eureka:
