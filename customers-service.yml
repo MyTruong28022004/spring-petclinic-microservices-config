@@ -22,3 +22,7 @@ management:
   zipkin:
     tracing:
       endpoint: http://zipkin.observability.svc.cluster.local:80/api/v2/spans
+      
+  tracing:
+    sampling:
+      probability: 1.0
